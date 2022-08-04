@@ -26,12 +26,13 @@ p {
 }
 
 .container-fluid{
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 #title{
     background-color: #ff4c68;
-    color: white;
+  color: #fff;
+  text-align: left;
 }
 
 /* Nav Bar  */
@@ -64,17 +65,21 @@ p {
 .title-image{
     width: 60%;
     transform: rotate(25deg);
+    /* position: absolute; */
+    right: 30%;
 }
 
 /* Feature section */
 
 #features{
     padding: 7% 15%;
+    background-color: white;
+    /* position: relative; */
 }
 
 .feature-box{
     text-align: center;
-    padding: 5%;
+    padding: 4.5%;
 }
 
 .icon{
@@ -113,4 +118,43 @@ p {
 
  .carousel-item{
     padding: 7% 15%;
+ }
+
+ /* Pricing Section  */
+
+ #pricing{
+    padding: 100px;
+    text-align: center;
+ }
+
+ .pricing-column{
+    padding: 3% 2%;
+ }
+
+ @media (max-width: 1028px){
+
+    #title{
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+ }
+
+ /* Call To Action  */
+
+ #cta{
+    background-color: #ff4c68;
+    text-align: center;
+    color: white;
+    padding: 7% 15%;
+ }
+
+ .cta-heading{
+    font-family: 'Montserrat';
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.5;
  }
